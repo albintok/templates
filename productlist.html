@@ -1,98 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container">
-          <a class="navbar-brand fw-bolder" href="#">E-kart</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <a class="navbar-brand fw-bolder" href="#">E-kart</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">All Products</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Shop
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">All Products</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">New Arrivals</a></li>
-                 
-                  <li><a class="dropdown-item" href="#">Popular</a></li>
-                </ul>
-              </li>
+              <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+
+              <li><a class="dropdown-item" href="#">Popular</a></li>
             </ul>
-           
-              <a class="btn btn-outline-dark" type="button" ><i class="fa-sharp fa-solid fa-cart-shopping"></i><span class="ps-1">Cart</span></a>
-            </form>
+          </li>
+        </ul>
+
+        <a class="btn btn-outline-dark" type="button"><i class="fa-sharp fa-solid fa-cart-shopping"></i><span
+            class="ps-1">Cart</span></a>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1500">
+          <img src="./images/Oneplus-Nord-2-Joker-Skins.jpg" class="d-block w-200"
+            style="height:400px; width: 1350px;" alt="">
+        </div>
+        <div class="carousel-item" data-bs-interval="1500">
+          <img src="./images/images.jpg" class="d-block w-300"
+            style="height:400px; width: 1350px;" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="1500">
+          <img src="./images/Adidas-Facebook-Timeline-Profile-Cover.jpg" class="d-block w-300" style="height:400px; width: 1350px;"
+            alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden" style="color: black;">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden" style="color: black;">Next</span>
+      </button>
+    </div>
+    <!-- 1st row -->
+    <div class="row mt-5">
+      <div class=" col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card" style="width: 100%;">
+          <img src="./images/oneplus-11-pro.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">One PLUS nord CE2</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-      </nav>
-      <div class=" pt-5 bg-dark text-white ps-5 text-end" style="height: 200px; display: flex;">
-        <span class="fs-4">All you Need is Here.!</span>
-
-        <figure class="figure ms-5">
-          <img src="/templates/images/eb8be53689cadd4effd950f0b8a27658.jpg" class="figure-img img-fluid rounded" alt="" style="height: 80px;width: 120px;">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Catagories
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Grocery</a></li>
-              <li><a class="dropdown-item" href="#">Clothing</a></li>
-              <li><a class="dropdown-item" href="#">Electronics</a></li>
-            </ul>
+      </div>
+      <div class=" col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card" style="width: 100%;">
+          <img src="./images/oneplus-11-pro.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">One PLUS 11</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
-        </figure>
-        <figure class="figure">
-          <img src="/templates/images/pic2.webp" class="figure-img img-fluid rounded ms-5" alt="" style="height: 80px;width: 120px;">
-          <figcaption class="figure-caption text-end fs-5">Offer Zone</figcaption>
-        </figure>
-        
-
-      
-      
+        </div>
       </div>
-      <div class=" p-3 bg-dark text-white" style="height: 200px; margin-top: 1000px; display: flex;">
-        <ul class=" fs-6" style="margin-left: 500px;"><span class="fw-bold">ABOUT</span><br>
-          contact us <br> 
-          About us <br>
-          info <br>
-        </ul>
-        <ul class=" fs-6"><span class="fw-bold">HEPL</span><br>
-          payments <br>
-          Shipping <br>
-          Returs <br>
-          FAQ <br>
-          Report <br>
-        </ul>
-        <ul class=" fs-6"><span class="fw-bold">POLICY</span><br>
-          Return policy <br>
-          Terms of use <br>
-          Privacy <br>
-          Security <br>
-        </ul> 
-        <!-- <span class="fw-lighter"><i class="fa-sharp fa-solid fa-copyright"></i>2022-2023,E-kart.com,Inc or its affiliates</span> -->
-
+      <div class=" col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card" style="width: 100%;">
+          <img src="./images/oneplus-11-pro.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">One PLUS 7t</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
       </div>
+      <div class=" col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card" style="width: 100%;">
+          <img src="./images/oneplus-11-pro.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">One PLUS 9r</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ro">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="col-4"></div>
+    </div>
+<!-- 2nd row -->
+<div class="row mt-5">
+  <div class=" col-lg-3 col-md-4 col-sm-6 col-12">
+    <div class="card" style="width: 100%;">
+      <img src="./images/oneplus-11-pro.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">One PLUS nord CE2</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class=" col-lg-3 col-md-4 col-sm-6 col-12">
+    <div class="card" style="width: 100%;">
+      <img src="./images/oneplus-11-pro.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">One PLUS 11</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class=" col-lg-3 col-md-4 col-sm-6 col-12">
+    <div class="card" style="width: 100%;">
+      <img src="./images/oneplus-11-pro.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">One PLUS 7t</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class=" col-lg-3 col-md-4 col-sm-6 col-12">
+    <div class="card" style="width: 100%;">
+      <img src="./images/oneplus-11-pro.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">One PLUS 9r</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-    
+
+  </div>
+
+  <div class=" p-3 bg-dark text-white" style="height: 200px; margin-top: 1000px; display: flex;">
+    <ul class=" fs-6" style="margin-left: 700px;"><span class="fw-bold">ABOUT</span><br>
+      contact us <br>
+      About us <br>
+      info <br>
+    </ul>
+    <ul class=" fs-6"><span class="fw-bold">HELP</span><br>
+      payments <br>
+      Shipping <br>
+      Returs <br>
+      FAQ <br>
+      Report <br>
+    </ul>
+    <ul class=" fs-6"><span class="fw-bold">POLICY</span><br>
+      Return policy <br>
+      Terms of use <br>
+      Privacy <br>
+      Security <br>
+    </ul>
+    <!-- <span class="fw-lighter"><i class="fa-sharp fa-solid fa-copyright"></i>2022-2023,E-kart.com,Inc or its affiliates</span> -->
+
+  </div>
+  <div class="bg-dark text-center text-white pt-5" style="height: 100px;"><span class="me-1">Copyright</span><i
+      class="fa-sharp fa-solid fa-copyright"></i><span class="ms-1">2022</span></div>
+
+
+
+
 </body>
+
 </html>
